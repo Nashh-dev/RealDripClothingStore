@@ -1,7 +1,7 @@
 
 //Question 2 a. i
 // ---------- Product Catalogue ----------
-let AllProducts = JSON.parse(localStorage.getItem('AllProducts')) || [
+let AllProducts = [
     { name: "Crew Neck T-Shirt", price: 1500, description: "Comfortable cotton crew neck T-shirt", image: "Assets/tshirt.png" },
     { name: "Sweatshirt", price: 2000, description: "Warm and cozy sweatshirt", image: "Assets/sweatshirt.png" },
     { name: "Jeans Pants", price: 2500, description: "Stylish denim jeans pants", image: "Assets/jeans.png" },
@@ -550,5 +550,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
 
 });
