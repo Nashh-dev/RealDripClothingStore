@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin Dashboard - Real Drip</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <h1>Real Drip Dashboard</h1>
+  <nav>
+    <a href="index.html">Home</a> |
+  </nav>
+</header>
+
+<main>
+  <section class="chart-container" id="gender-chart"></section>
+  <section class="chart-container" id="age-chart"></section>
+
+  <section>
+    <h3>Search All Invoices by TRN</h3>
+    <input type="text" id="search-trn" placeholder="Enter TRN (000-000-000)">
+    <button id="search-invoices-btn">Search Invoices</button>
+    <div id="invoice-results"></div>
+  </section>
+
+  <section>
+    <h3>Get User's Invoices by TRN</h3>
+    <input type="text" id="user-trn" placeholder="Enter User TRN">
+    <button id="get-user-invoices-btn">Get User Invoices</button>
+    <div id="user-invoice-results"></div>
+  </section>
+</main>
+
+
+</body>
+</html>
