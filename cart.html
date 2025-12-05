@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cart - Real Drip</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img class="logo" src="Assets/logo.png" alt="Real Drip logo">
+      <h1><span class="material-icons">water_drop</span> REAL DRIP</h1>
+    </div>
+    <nav class="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="cart-header-row">
+      <h2>Your Cart</h2>
+      <button id="close-cart" class="close-cart-btn">Close</button>
+    </div>
+
+    <div id="cart-container" class="cart-grid">
+      <!-- Items will be loaded here dynamically -->
+    </div>
+
+    <div class="cart-summary" id="cart-summary">
+      <!-- Summary info inserted by JS -->
+    </div>
+
+    <div class="cart-totals">
+      <h3>Cart Calculations</h3>
+      <p>Subtotal: J$<span id="subtotal">0.00</span></p>
+      <p>Tax (15%): J$<span id="taxResult">0.00</span></p>
+      <p>Discount (10%): J$<span id="discountResult">0.00</span></p>
+      <p><b>Total: J$<span id="totalResult">0.00</span></b></p>
+    </div>
+
+    <div class="cart-actions">
+      <button id="clear-cart" class="clearcartbtn">Clear Cart</button>
+      <a href="checkout.html"><button id="go-checkout" class="checkoutbtn">Checkout</button></a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Real Drip Clothing Store</p>
+  </footer>
+</body>
+</html>
